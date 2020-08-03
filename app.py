@@ -14,16 +14,11 @@ while True:
     event, values = window.read()
     itemName = values[0]
     event, values = window.read()
-    itemPricePaid = float(values[0])
+    itemPricePaid = float( values[0] )
 
-    itemPriceNow = queryItem(itemName)
-    priceDifference(itemPricePaid, itemPriceNow[0])
+    itemPriceNow = queryItem( itemName )
+    priceDifference( itemPricePaid, itemPriceNow[0] )
     if event == sg.WIN_CLOSED or event == 'Cancel':	# if user closes window or clicks cancel
         break
 
 window.close()
-
-# itemName = input()
-# itemPricePaid = float(input())
-# itemPriceNow = queryItem(itemName)
-# priceDifference(itemPricePaid, itemPriceNow[0])
