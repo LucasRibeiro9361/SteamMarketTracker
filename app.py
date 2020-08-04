@@ -22,3 +22,5 @@ while True:
         break
 
 window.close()
+
+print('Program Closed')
